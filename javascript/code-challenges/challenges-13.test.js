@@ -38,9 +38,14 @@ For example, ['this is great :)', 'wow', 'whyyyyyy :(', ':)))))'] returns ['this
 
 const findHappiness = (arr) => {
   // Solution code here...
-  let newstr = arr.map((num)=>num.replace(/[^0-9]/g,''));
-  return newstr;
-};
+    let newArr = [];
+    arr.map((value) => {
+      if (value.includes(":)")) {
+        newArr.push(value);
+      }
+    });
+    return newArr;
+  };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
