@@ -6,6 +6,14 @@
 
 Each type of code challenge has slightly different instructions. Please refer to the notes and examples below for instructions for each DS&A assignment type.
 
+## Table of content
+| Num               | Link                                                                                    |
+| ----------------- | --------------------------------------------------------------------------------------- |
+| 1                 | [reverse array](code_challenges/array-reverse/array-reverse.py)                         |
+| 2                 | [array insert shift](code_challenges/array-insert-shift/array-insert-shift.py)          | 
+| 3                 | [binary search](code_challenges/array-binary-search/array-binary-search.py)             | 
+| 4                 | [Linked List](code_challenges/linked_list/linked_list.py)                               | 
+
 ### Data Structure: New Implementation
 
 - Create a new folder under the `python` level, with the name of the data structure and complete your implementation there
