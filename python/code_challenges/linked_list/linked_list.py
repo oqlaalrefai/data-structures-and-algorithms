@@ -2,16 +2,9 @@ class LinkedList:
     '''this class will link each node together'''
     def __init__(self):
         self.head = None
-    def printLinkedList(self):
-        current = self.head
-        if current == None:
-            return 'Linked List is empty'
-        else :
-            while current != None :
-                print(current.data)
-                current = current.next
-    def insert(self, data):
-        newNode = node(data)
+
+    def append(self, data):
+        newNode = Node(data)
         if(self.head):
             current = self.head
             while(current.next):
@@ -23,16 +16,16 @@ class LinkedList:
 
 
     def __str__(self):
-        retStr = ""
+        retStr = "head ->"
 
         current = self.head
         while(current != None):
-            retStr += f"({current.data}) ->"
+            retStr += f" {current.data} ->"
             current = current.next
 
         
 
-        return f'{retStr} NULL'
+        return f'{retStr} None'
     
     
     
@@ -50,7 +43,7 @@ class LinkedList:
 
 
 
-class node() :
+class Node() :
     '''this class to create node'''
     def __init__(self,data) : # its a constructor
         self.data = data
@@ -58,11 +51,11 @@ class node() :
 
 
 
-print(node(5)) #it will create a node but it will print a addres value 
+print(Node(5)) #it will create a node but it will print a addres value 
 
 LL = LinkedList() #create instance from class
-LL.insert(3) 
-LL.insert(4)
-LL.insert(5)
+LL.append(3) 
+LL.append(4)
+LL.append(5)
 
 print(LL.__str__())
