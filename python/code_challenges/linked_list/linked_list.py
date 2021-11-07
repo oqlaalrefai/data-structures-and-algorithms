@@ -1,3 +1,6 @@
+# from code_challenges.linked_list import Li
+
+
 class LinkedList:
     '''this class will link each node together'''
     def __init__(self):
@@ -25,7 +28,7 @@ class LinkedList:
 
         
 
-        return f'{retStr} None'
+        return f'{retStr} NULL'
     
     
     
@@ -42,7 +45,47 @@ class LinkedList:
         return f'{False} node not found ' # Data Not found
 
 
+    def insertAfter(self, x, newdata):
+        
 
+        n = self.head
+        print(n.next)
+        while n is not None:
+            if n.data == x:
+                break
+            n = n.next
+        if n is None:
+            print("item not in the list")
+        else:
+            new_node = Node(newdata)
+            new_node.next = n.next
+            n.next = new_node
+
+
+    def insertBefore(self, x,newdata):
+        if self.head is None:
+            print("List has no element")
+            return
+
+        if x == self.head.data:
+            new_node = Node(newdata)
+            new_node.next = self.head
+            self.head = new_node
+            return
+
+        n = self.head
+        print(n.next)
+        while n.next is not None:
+            if n.next.data == x:
+                break
+            n = n.next
+        if n.next is None:
+            print("item not in the list")
+        else:
+            new_node = Node(newdata)
+            new_node.next = n.next
+            n.next = new_node
+        
 class Node() :
     '''this class to create node'''
     def __init__(self,data) : # its a constructor
@@ -50,12 +93,9 @@ class Node() :
         self.next = None
 
 
-
-print(Node(5)) #it will create a node but it will print a addres value 
-
-LL = LinkedList() #create instance from class
-LL.append(3) 
-LL.append(4)
-LL.append(5)
-
-print(LL.__str__())
+l = LinkedList()
+l.append(6)
+l.append(1.67)
+l.insertAfter(1.67,'yes')
+l.insertBefore('yes','no')
+print(l)
