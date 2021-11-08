@@ -1,4 +1,4 @@
-# from code_challenges.linked_list import Li
+
 
 
 class LinkedList:
@@ -49,13 +49,13 @@ class LinkedList:
         
 
         n = self.head
-        print(n.next)
+
         while n is not None:
             if n.data == x:
                 break
             n = n.next
         if n is None:
-            print("item not in the list")
+            return "item not in the list"
         else:
             new_node = Node(newdata)
             new_node.next = n.next
@@ -64,8 +64,8 @@ class LinkedList:
 
     def insertBefore(self, x,newdata):
         if self.head is None:
-            print("List has no element")
-            return
+            return "List has no element"
+
 
         if x == self.head.data:
             new_node = Node(newdata)
@@ -74,18 +74,37 @@ class LinkedList:
             return
 
         n = self.head
-        print(n.next)
         while n.next is not None:
             if n.next.data == x:
                 break
             n = n.next
         if n.next is None:
-            print("item not in the list")
+            return "item not in the list"
         else:
             new_node = Node(newdata)
             new_node.next = n.next
             n.next = new_node
+
+            
+    def kth(self,k):
+        a = {}
+        current = self.head
+        counter = -1
+        if k <0 :
+            return "its negative value"
         
+        while current != None :
+            counter +=1
+            current = current.next
+        current = self.head
+        if k > counter+1:
+            return "the value is greater than number of nodes"
+        while current != None:
+            a[counter] = current.data
+            counter -= 1
+            current = current.next
+        return a[k]
+
 class Node() :
     '''this class to create node'''
     def __init__(self,data) : # its a constructor
@@ -98,4 +117,5 @@ l.append(6)
 l.append(1.67)
 l.insertAfter(1.67,'yes')
 l.insertBefore('yes','no')
-print(l)
+
+print(l,l.kth(3))

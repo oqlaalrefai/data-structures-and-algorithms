@@ -60,6 +60,64 @@ def test_after_the_last_node(ll):
     actual = ll.__str__()
     assert expected == actual
 
+def test_kGreater():
+
+    expected = "the value is greater than number of nodes"
+    ll = LinkedList()
+    ll.append(1)
+    ll.append(2)
+    ll.append(3)
+    actual = ll.kth(5)
+    assert actual == expected
+
+
+def test_negative():
+
+    expected = "its negative value"
+    ll = LinkedList()
+    ll.append(1)
+    ll.append(2)
+    ll.append(3)
+    actual = ll.kth(-1)
+    assert actual == expected
+    
+def test_same_length():
+    expected = 1
+    ll = LinkedList()
+    ll.append(1)
+    ll.append(11)
+    ll.append(14)
+    actual = ll.kth(2)
+    assert actual == expected
+
+def test_size1():
+
+    expected = 1
+    ll = LinkedList()
+    ll.append(1)
+    actual = ll.kth(0)
+    assert actual == expected
+
+def test_kthMiddle():
+    expected = 2
+    ll = LinkedList()
+    ll.append(1)
+    ll.append(2)
+    ll.append(4)
+    ll.append(5)
+    actual = ll.kth(2)
+    assert actual == expected
+
+def test_kthMiddle():
+    expected = 1
+    ll = LinkedList()
+    ll.append(1)
+    ll.append(2)
+    ll.append(3)
+    actual = ll.kth(2)
+    assert actual == expected
+
+
 
 @pytest.fixture
 def ll():
