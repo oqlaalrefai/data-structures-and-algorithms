@@ -105,6 +105,7 @@ class LinkedList:
             current = current.next
         return a[k]
 
+
 class Node() :
     '''this class to create node'''
     def __init__(self,data) : # its a constructor
