@@ -1,9 +1,11 @@
 # Challenge Summary
 <!-- Description of the challenge -->
+
 create zipLists method that take two argument (list argument) and merge it together and return the merged list
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 ![zipLists](zipLists.PNG)
+
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 iteration approch (while loop)
