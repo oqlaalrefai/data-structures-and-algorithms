@@ -104,7 +104,29 @@ class LinkedList:
             counter -= 1
             current = current.next
         return a[k]
+    def zipLists(self,list1, list2):
+        if list1.head == None and list2.head == None:
+            return 'the two lists is empty'
+        if list2.head == None or list1.head == None:
+            if list1.head == None :
+                return list2
+            if list2.head == None :
+                return list1
+        curr1 = list1.head
+        curr2 = list2.head
 
+        while curr2 and curr1:
+            temp1 = curr1.next
+            temp2 = curr2.next
+            curr1.next = curr2
+            curr2.next = temp1
+            curr1 = temp1
+            curr2 = temp2
+            if curr1.next == None:
+                break
+        if curr2:
+            curr1.next = curr2
+        return list1
 class Node() :
     '''this class to create node'''
     def __init__(self,data) : # its a constructor
@@ -113,9 +135,12 @@ class Node() :
 
 
 l = LinkedList()
+l2 = LinkedList()
+l2.append(11)
+l2.append(12)
 l.append(6)
 l.append(1.67)
-l.insertAfter(1.67,'yes')
-l.insertBefore('yes','no')
+l.append(8)
+l3 =LinkedList()
 
-print(l,l.kth(3))
+print(l3.zipLists(l2,l))

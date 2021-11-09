@@ -1,19 +1,24 @@
 # Challenge Summary
 <!-- Description of the challenge -->
-this function take argument: a number k, as a parameter and Return the node’s value that is k places from the tail of the linked list.
+create zipLists method that take two argument (list argument) and merge it together and return the merged list
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-![Kth method]()
+![zipLists](zipLists.PNG)
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-its using iteration (two loops) 
-the complexity : O(n^2)
+iteration approch (while loop)
+complexity is :
+O(n)
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
-my linked list :
-head -> 5 -> 8 -> 77 -> 9
-index : 3    2     1    0
-when you call function wth argument =2 :
-Kth(2)
-the output will be
-8
+zipLists(list1, list2)
+
+input :
+list1 :
+head -> 11 -> 12 ->NULL
+
+list2 :
+head -> 6 -> 1.67 -> 8 -> NULL
+
+output :
+head -> 11 -> 6 -> 12 -> 1.67 -> 8 -> NULL
