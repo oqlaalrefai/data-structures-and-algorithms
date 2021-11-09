@@ -1,9 +1,10 @@
 # Challenge Summary
 <!-- Description of the challenge -->
 this function take argument: a number k, as a parameter and Return the node’s value that is k places from the tail of the linked list.
+
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-![Kth method]()
+![Kth method](Kth.PNG)
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 its using iteration (two loops) 
