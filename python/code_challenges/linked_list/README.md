@@ -1,6 +1,7 @@
 # Challenge Summary
 <!-- Description of the challenge -->
-Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list.
+this function take argument: a number k, as a parameter and Return the node’s value that is k places from the tail of the linked list.
+
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 ![Kth method](Kth.PNG)
