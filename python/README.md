@@ -13,6 +13,10 @@ Each type of code challenge has slightly different instructions. Please refer to
 | 2                 | [array insert shift](code_challenges/array-insert-shift/array-insert-shift.py)          | 
 | 3                 | [binary search](code_challenges/array-binary-search/array-binary-search.py)             | 
 | 4                 | [Linked List](code_challenges/linked_list/linked_list.py)                               | 
+| 5                 | [Zip List](code_challenges/ZipList/ziplist.py)                                          | 
+| 6-A               | [stack queu](code_challenges/stack-and-queue/stack_and_queue/stack.py)                  | 
+| 6-B               | [stack queu](code_challenges/stack-and-queue/stack_and_queue/queue.py)                  | 
+| 7                 | [pseudo queue](code_challenges/stack-queue-pseudo/stack_queue_pseudo/psuedo.py)         | 
 
 ### Data Structure: New Implementation
 
