@@ -15,6 +15,7 @@ O(n)
 
 ## Solution
 using dequeue and enqueue methods
+
 verification
 enqueue :
 input :
