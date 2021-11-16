@@ -18,6 +18,3 @@ ex :
 `validate_brackets("{()()}")` 
   - the output will be `True`
 
-- [x] test the validation bracket and return true
-- [x] check if the stack is empty
-- [x] return False if the validation bracket is failed
