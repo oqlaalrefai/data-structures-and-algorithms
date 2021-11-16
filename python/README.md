@@ -7,16 +7,18 @@
 Each type of code challenge has slightly different instructions. Please refer to the notes and examples below for instructions for each DS&A assignment type.
 
 ## Table of content
-| Num               | Link                                                                                    |
-| ----------------- | --------------------------------------------------------------------------------------- |
-| 1                 | [reverse array](code_challenges/array-reverse/array-reverse.py)                         |
-| 2                 | [array insert shift](code_challenges/array-insert-shift/array-insert-shift.py)          | 
-| 3                 | [binary search](code_challenges/array-binary-search/array-binary-search.py)             | 
-| 4                 | [Linked List](code_challenges/linked_list/linked_list.py)                               | 
-| 5                 | [Zip List](code_challenges/ZipList/ziplist.py)                                          | 
-| 6-A               | [stack queu](code_challenges/stack-and-queue/stack_and_queue/stack.py)                  | 
-| 6-B               | [stack queu](code_challenges/stack-and-queue/stack_and_queue/queue.py)                  | 
-| 7                 | [pseudo queue](code_challenges/stack-queue-pseudo/stack_queue_pseudo/psuedo.py)         | 
+| Num               | Link                                                                                                    |
+| ----------------- | ------------------------------------------------------------------------------------------------------- |
+| 1                 | [reverse array](code_challenges/array-reverse/array-reverse.py)                                         |
+| 2                 | [array insert shift](code_challenges/array-insert-shift/array-insert-shift.py)                          | 
+| 3                 | [binary search](code_challenges/array-binary-search/array-binary-search.py)                             | 
+| 4                 | [Linked List](code_challenges/linked_list/linked_list.py)                                               | 
+| 5                 | [Zip List](code_challenges/ZipList/ziplist.py)                                                          | 
+| 6-A               | [stack](code_challenges/stack-and-queue/stack_and_queue/stack.py)                                       | 
+| 6-B               | [queu](code_challenges/stack-and-queue/stack_and_queue/queue.py)                                        | 
+| 7                 | [pseudo queue](code_challenges/stack-queue-pseudo/stack_queue_pseudo/psuedo.py)                         |
+| 8                 | [Animal shelter](code_challenges/stack-queue-animal-shelter/stack_queue_animal_shelter/AnimalShelter.py)| 
+| 9                 | [Bracket validation](code_challenges/Multi-bracket-Validation/multi_bracket_validation/brackets)        | 
 
 ### Data Structure: New Implementation
 
