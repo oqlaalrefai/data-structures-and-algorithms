@@ -1,24 +1,24 @@
-# Trees
-A binary tree is a tree data structure where each node has up to two child nodes, creating the branches of the tree. The two children are usually called the left and right nodes. Parent nodes are nodes with children, while child nodes may include references to their parents.
-## Challenge
-- making a binary tree
-that eac node has two child left and right and its taarversal metod:
-  - pre order
-  - in order
-  - post order
-- and a binary search tree
-the bigger value should be in the right node and the smallest value will be in the left node
+# Challenge Summary
+we create method for binary tree this method should return the maximum value in the tree assumed that the data in tree is numaric data this method has no argument and return the max value
+
+
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+![max](max.PNG)
 ## Approach & Efficiency
-iteration  and the complexity is :
-O(n)
-
-## API
-<!-- Description of each method publicly available in each of your trees -->
-- post order should prent the root after the child
-- pre order the root should be printed before the child
-- in order the root will be printed in the middle between left and right
-
-- add method will add node to tree 
-- contain it will check if the value is exist in tree
-
-
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+it will closure loop through all element in tree and return max value
+complexity is : O(n)
+## Solution
+<!-- Show how to run your code, and examples of it in action -->
+```
+if __name__ == '__main__':
+    tree = BinaryTree()
+    tree.root = Node(4)
+    tree.root.left.right.left = Node(1)
+    tree.root.left.right.right = Node(11)
+    tree.root.right.right = Node(9)
+    print("Maximum element is",tree.max())
+```
+the output will be:
+`Maximum element is : 11`
