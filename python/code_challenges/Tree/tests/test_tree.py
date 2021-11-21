@@ -63,3 +63,42 @@ def test_postorder():
     actual = tree.postOrder(tree.root)
     expected = [4, 2, 5, 6, 3, 1]
     assert actual == expected
+
+
+def test_maxExpectedoutcome(Test):
+    '''test if its return the truely max value'''
+    Expected = 6
+    Actual = Test.max()
+    assert Actual == Expected
+
+def test_RaiseError(TEST):
+    '''test if its raise error'''
+    Expected = 'You Binary tree is empty'
+    Actual = TEST.max()
+    assert Actual == Expected
+
+
+@pytest.fixture
+
+def Test():
+    tree = BinaryTree()
+    node1=Node(1)
+    node2=Node(2)
+    node3=Node(3)
+    node5=Node(5)
+    node6=Node(6)
+
+    node1.left = node2
+    node1.right = node3
+    node3.left=node6
+    node2.right = node5
+    tree.root=node1
+
+
+    return tree
+
+@pytest.fixture
+def TEST():
+    tree2 = BinaryTree()
+    return tree2
+

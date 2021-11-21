@@ -53,6 +53,23 @@ class BinaryTree:
 
         return output
 
+
+    def max(self):
+        """
+        This function gets the maximum value in the tree
+        """
+        if self.root== None:
+            return "You Binary tree is empty"
+        def checkMax(root):
+            if root == None:
+                return -1
+            if checkMax(root.left) > root.data:
+                root.data = checkMax(root.left)
+            if checkMax(root.right) > root.data:
+                root.data = checkMax(root.right)
+            return root.data
+        return checkMax(self.root)
+
 class BTS(BinaryTree):
 
     def add(self, data):
@@ -104,3 +121,15 @@ class BTS(BinaryTree):
                     return True
 
             return False
+
+if __name__ == '__main__':
+    tree = BinaryTree()
+    tree.root = Node(2)
+    tree.root.left = Node(7)
+    tree.root.right = Node(5)
+    tree.root.left.right = Node(6)
+    tree.root.left.right.left = Node(1)
+    tree.root.left.right.right = Node(11)
+    tree.root.right.right = Node(9)
+    tree.root.right.right.left = Node(4)
+    print("Maximum element is",tree.max())
