@@ -1,24 +1,26 @@
 # Challenge Summary
-we create method for binary tree this method should return the maximum value in the tree assumed that the data in tree is numaric data this method has no argument and return the max value
-
+we create function called breadth first thats recieve tree as argument and return list of all values in the tree, in the order they were encountered (according to its breadth(level))
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-![max](max.PNG)
+![Breadth First](breadth.PNG)
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-it will closure loop through all element in tree and return max value
-complexity is : O(n)
+loop ing through each element in tree
+complexity : O(n)
+
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
 ```
-if __name__ == '__main__':
     tree = BinaryTree()
-    tree.root = Node(4)
+    tree.root = Node(2)
+    tree.root.left = Node(7)
+    tree.root.right = Node(5)
+    tree.root.left.right = Node(6)
     tree.root.left.right.left = Node(1)
     tree.root.left.right.right = Node(11)
     tree.root.right.right = Node(9)
-    print("Maximum element is",tree.max())
+    tree.root.right.right.left = Node(4)
+    print(tree.breadthFirst(tree.root))
 ```
-the output will be:
-`Maximum element is : 11`
+    output should be :
+    ` [2, 7, 5, 6, 9, 1, 11, 4] `

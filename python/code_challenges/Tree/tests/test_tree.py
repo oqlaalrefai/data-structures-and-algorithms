@@ -4,7 +4,7 @@ from tree import __version__
 def test_version():
     assert __version__ == '0.1.0'
 
-from tree.tree import BinaryTree, Node, BTS
+from tree.tree import BinaryTree, Node, BTS,Queue
 import pytest
 
 def test_singleNode():
@@ -78,6 +78,8 @@ def test_RaiseError(TEST):
     assert Actual == Expected
 
 
+
+
 @pytest.fixture
 
 def Test():
@@ -96,6 +98,31 @@ def Test():
 
 
     return tree
+
+def test_breadthFirst():
+    tree2=BinaryTree()
+    tree2.root=Node(1)
+    tree2.root.left=Node(2)
+    tree2.root.right=Node(3)
+    tree2.root.left.left=Node(4)
+    tree2.root.left.right=Node(5)
+    tree2.root.right.left=Node(6)
+    assert tree2.breadthFirst(tree2.root)==[1, 2, 3, 4, 5, 6]
+
+
+def test_breadthFirst2():
+    tree = BinaryTree()
+    a_node = Node("A")
+    b_node = Node("B")
+    c_node = Node("C")
+    d_node = Node("D")
+    a_node.left = b_node
+    a_node.right = c_node
+    b_node.left = d_node
+    tree.root = a_node
+    expected = ["A", "B", "C", "D"]
+    actual = tree.breadthFirst(tree.root)
+    assert actual == expected
 
 @pytest.fixture
 def TEST():

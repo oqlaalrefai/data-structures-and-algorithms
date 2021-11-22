@@ -6,21 +6,36 @@ class Node:
         self.left = None
         self.right = None
 
+class Queue:
+    def __init__(self, collection=[]):
+        self.data = collection
+
+    def peek(self):
+        if len(self.data):
+            return True
+        return False
+
+    def enqueue(self, item):
+        self.data.append(item)
+
+    def dequeue(self):
+        return self.data.pop(0)
+    
 
 
-class BinaryTree:
+class BinaryTree():
 
     def __init__(self):
         self.root=None
 
     def  preOrder(self, root):
         output=[]
-        output.append(root. data)
+        output.append(root.data)
         if root.left :
-            output += self. preOrder(root.left)
+            output += self.preOrder(root.left)
 
         if root.right:
-            output += self. preOrder(root.right)
+            output += self.preOrder(root.right)
 
 
         return output
@@ -52,6 +67,27 @@ class BinaryTree:
         output.append(root. data)
 
         return output
+
+
+
+    def breadthFirst(self,root):
+        queue = Queue()
+        queue.enqueue(self.root)
+        list_of_items = []
+
+        while queue.peek():
+            front = queue.dequeue()
+            list_of_items.append(front.data)
+
+            if front.left:
+                queue.enqueue(front.left)
+
+            if front.right:
+                queue.enqueue(front.right)
+
+        return list_of_items
+
+
 
 
     def max(self):
@@ -132,4 +168,4 @@ if __name__ == '__main__':
     tree.root.left.right.right = Node(11)
     tree.root.right.right = Node(9)
     tree.root.right.right.left = Node(4)
-    print("Maximum element is",tree.max())
+    print(tree.breadthFirst(tree.root))
