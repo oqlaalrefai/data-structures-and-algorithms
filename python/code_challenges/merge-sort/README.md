@@ -15,3 +15,8 @@ space : o(h^2)
 `print(Mergesort([8,4,23,42,16,15]))`
 the output :
 `[4, 8, 15, 16, 23, 42]`
+
+
+
+## pull request
+[Pull Request](https://github.com/oqlaalrefai/data-structures-and-algorithms/pull/34)
