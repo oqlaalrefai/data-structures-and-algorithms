@@ -19,8 +19,9 @@ Each type of code challenge has slightly different instructions. Please refer to
 | 7                 | [pseudo queue](code_challenges/stack-queue-pseudo/stack_queue_pseudo/psuedo.py)                         |
 | 8                 | [Animal shelter](code_challenges/stack-queue-animal-shelter/stack_queue_animal_shelter/AnimalShelter.py)| 
 | 9                 | [Bracket validation](code_challenges/Multi-bracket-Validation/multi_bracket_validation/brackets)        | 
-| 10                | [merge sort](code_challenges/merge-sort/merge-sort/merge.py)                                            | 
-| 11                | [quick sort](code_challenges/merge-sort/quickSort/quicksort/quicksort.py)                                            | 
+| 10                | [insertion sort](code_challenges/insertion/insertion/insertion.py)                                      | 
+| 11                | [merge sort](code_challenges/merge-sort/merge-sort/merge.py)                                            | 
+| 12                | [quick sort](code_challenges/merge-sort/quickSort/quicksort/quicksort.py)                               | 
 
 
 
