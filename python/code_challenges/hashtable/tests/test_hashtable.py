@@ -1,6 +1,6 @@
 from hashtable import __version__
 from hashtable.hashtable import Hashtable
-
+from hashtable.leftJoin import left_join
 # def test_version():
 #     assert __version__ == '0.1.0'
 
